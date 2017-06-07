@@ -64,7 +64,7 @@ RSpec.describe 'Items API' do
 
   # Test suite for PUT /lists/:list_id/items
   describe 'POST /lists/:list_id/items' do
-    let(:valid_attributes) { { name: 'Visit Narnia', done: false } }
+    let(:valid_attributes) { { name: 'Visit Narnia' } }
 
     context 'when request attributes are valid' do
       before { post "/lists/#{list_id}/items", params: valid_attributes }
@@ -88,7 +88,7 @@ RSpec.describe 'Items API' do
   end
 
   describe 'POST /lists/:list_id/items' do
-    let(:valid_attributes) { { location: 'World of Narnia', done: false } }
+    let(:valid_attributes) { { location: 'World of Narnia' } }
 
     context 'when request attributes are valid' do
       before { post "/lists/#{list_id}/items", params: valid_attributes }
@@ -112,7 +112,7 @@ RSpec.describe 'Items API' do
   end
 
   describe 'POST /lists/:list_id/items' do
-    let(:valid_attributes) { { postal_code: 123456, done: false } }
+    let(:valid_attributes) { { postal_code: 123456 } }
 
     context 'when request attributes are valid' do
       before { post "/lists/#{list_id}/items", params: valid_attributes }

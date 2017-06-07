@@ -22,7 +22,7 @@ RSpec.describe 'Items API' do
   end
 
   describe 'POST /lists/:list_id/items' do
-    let(:valid_attributes) { { name: 'Visit Narnia', done: false }.to_json }
+    let(:valid_attributes) { { name: 'Visit Narnia' }.to_json }
 
     context 'when request attributes are valid' do
       before do

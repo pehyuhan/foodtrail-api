@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Item, type: :model do
   # Association test
-  # ensure an item record belongs to a single todo record
+  # ensure an item record belongs to a single list record
   it { should belong_to(:list) }
   # Validation test
   # ensure column name is present before saving
